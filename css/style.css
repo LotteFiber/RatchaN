@@ -20,6 +20,20 @@ body {
   gap: 20px;
 }
 
+.left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: sticky;
+  top: 20px;
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .profile-card {
   max-width: 320px;
   border-radius: 12px;
@@ -114,29 +128,24 @@ body {
   text-align: center;
 }
 
-.left-column {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  width: 30%;
-}
-
-.right-column {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  width: 70%;
-}
-
 .navbar {
   max-width: 800px;
   height: 50px;
   border-radius: 12px;
+  overflow: hidden;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   background: #fff;
+  position: relative;
   padding: 20px;
-  display: flex;
-  justify-content: space-between;
+}
+.navbar .navbar-banner {
+  height: 90px;
+  width: 100%;
+  background-image: url("../assets/sandwich.png");
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .project {
@@ -145,6 +154,34 @@ body {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   background: #fff;
   padding: 20px 40px;
+}
+
+.project-github .btn-view-code {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 12px;
+  border-radius: 999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.project-github .btn-view-code i {
+  margin-right: 6px;
+  font-size: 1rem;
+}
+.project-github .btn-view-code:link {
+  background-color: #333;
+  color: #fff;
+}
+.project-github .btn-view-code:visited {
+  background-color: #333;
+  color: #fff;
+}
+.project-github .btn-view-code:hover {
+  background-color: #7f7e7e;
 }
 
 .project-header p {
