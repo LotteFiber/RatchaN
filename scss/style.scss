@@ -1,0 +1,173 @@
+$primary-color: #74a12e;
+$text-color: #fff;
+$font-stack: "Segoe UI", sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-stack;
+  line-height: 1.6;
+  background-color: #333333;
+  color: #fff;
+  min-height: 100vh;
+  max-width: 100%;
+  margin: 0 auto;
+
+  @media (min-width: 640px) {
+    max-width: 640px; // sm
+  }
+
+  @media (min-width: 768px) {
+    max-width: 768px; // md
+  }
+
+  @media (min-width: 1024px) {
+    max-width: 1024px; // lg
+  }
+
+  @media (min-width: 1280px) {
+    max-width: 1280px; // xl
+  }
+
+  @media (min-width: 1536px) {
+    max-width: 1536px; // 2xl
+  }
+}
+
+header {
+  background: $primary-color;
+  color: #fff;
+  padding: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    ul {
+      display: flex;
+      gap: 1rem;
+      list-style: none;
+
+      a {
+        color: #fff;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+section {
+  padding: 2rem;
+}
+
+#home {
+  display: flex;
+  justify-content: center;
+
+  h1 {
+    font-size: 2rem;
+
+    span {
+      border-bottom: 3px solid #fff;
+      padding-bottom: 0.25rem;
+    }
+  }
+}
+
+#projects {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #333;
+
+  > div {
+    max-width: 800px; // optional: limit width
+    width: 100%; // responsive layout
+    text-align: center; // center text content
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+
+    span {
+      border-bottom: 3px solid #fff;
+      padding-bottom: 0.25rem;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column; // Stack projects vertically
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 1rem; // Space between items
+
+    li {
+      background-color: $primary-color;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease;
+
+      &:hover {
+        transform: scale(1.02);
+      }
+    }
+  }
+}
+#skills {
+  display: flex;
+  justify-content: center;
+}
+
+#skills ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+#skills li {
+  display: flex;
+  flex-direction: column; // stack icon above text
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+}
+
+#education {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 1rem;
+  }
+  span {
+    color: $primary-color;
+  }
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1rem;
+  background: #222;
+  color: $text-color;
+}
