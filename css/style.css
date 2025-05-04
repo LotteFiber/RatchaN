@@ -24,7 +24,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  position: sticky;
   top: 20px;
 }
 
@@ -72,12 +71,12 @@ body {
 }
 .profile-card .location {
   font-size: 14px;
-  color: #777;
+  color: #999;
   margin-bottom: 16px;
 }
 .profile-card .bio {
   font-size: 14px;
-  color: #444;
+  color: #777;
 }
 .profile-card .socials {
   margin-top: 12px;
@@ -201,9 +200,10 @@ body {
 }
 
 .project-image {
-  margin-top: 20px;
+  margin: 20px;
   display: flex;
-  justify-content: center;
+  width: 600px;
+  height: 400px;
 }
 
 /*# sourceMappingURL=style.css.map */

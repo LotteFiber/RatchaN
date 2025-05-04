@@ -35,7 +35,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  position: sticky;
   top: 20px;
 }
 
@@ -86,13 +85,13 @@ body {
 
   .location {
     font-size: 14px;
-    color: #777;
+    color: #999;
     margin-bottom: 16px;
   }
 
   .bio {
     font-size: 14px;
-    color: #444;
+    color: #777;
   }
 
   .socials {
@@ -234,7 +233,8 @@ body {
 }
 
 .project-image {
-  margin-top: 20px;
+  margin: 20px;
   display: flex;
-  justify-content: center;
+  width: 600px;
+  height: 400px;
 }
