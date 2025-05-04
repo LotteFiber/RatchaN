@@ -140,7 +140,10 @@ body {
 .navbar .navbar-banner {
   height: 90px;
   width: 100%;
-  background-image: url("../assets/sandwich.png");
+  background-image: url("../assets/matcha-gradient.jpg");
+  background-size: cover;
+  background-position: 50% 60%;
+  background-repeat: no-repeat;
   position: absolute;
   top: 0;
   left: 0;
@@ -153,6 +156,11 @@ body {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   background: #fff;
   padding: 20px 40px;
+}
+
+.btn {
+  display: flex;
+  gap: 20px;
 }
 
 .project-github .btn-view-code {
@@ -181,6 +189,34 @@ body {
 }
 .project-github .btn-view-code:hover {
   background-color: #7f7e7e;
+}
+
+.live-demo .btn-live-demo {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 12px;
+  border-radius: 999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.live-demo .btn-live-demo i {
+  margin-right: 6px;
+  font-size: 1rem;
+}
+.live-demo .btn-live-demo:link {
+  background-color: #7f7e7e;
+  color: #fff;
+}
+.live-demo .btn-live-demo:visited {
+  background-color: #7f7e7e;
+  color: #fff;
+}
+.live-demo .btn-live-demo:hover {
+  background-color: #c9c9c9;
 }
 
 .project-header p {
