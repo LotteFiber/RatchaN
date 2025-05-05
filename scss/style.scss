@@ -283,3 +283,11 @@ body {
   max-width: 100%;
   overflow: hidden;
 }
+
+.project-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  box-sizing: border-box;
+  border-radius: 12px;
+}

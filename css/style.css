@@ -245,4 +245,12 @@ body {
   overflow: hidden;
 }
 
+.project-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  box-sizing: border-box;
+  border-radius: 12px;
+}
+
 /*# sourceMappingURL=style.css.map */
