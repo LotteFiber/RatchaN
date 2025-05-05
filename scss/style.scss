@@ -152,7 +152,7 @@ body {
 }
 
 .navbar {
-  max-width: 800px;
+  max-width: 900px;
   height: 50px;
   border-radius: 12px;
   overflow: hidden;
@@ -277,6 +277,9 @@ body {
 .project-image {
   margin: 20px;
   display: flex;
-  width: 600px;
-  height: 400px;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+  max-width: 100%;
+  overflow: hidden;
 }
