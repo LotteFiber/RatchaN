@@ -253,4 +253,13 @@ body {
   border-radius: 12px;
 }
 
+@media (max-width: 767px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 460px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
