@@ -83,6 +83,10 @@ body {
 }
 .profile-card .socials a {
   display: inline-block;
+}
+.profile-card .socials a:nth-of-type(2),
+.profile-card .socials a:nth-of-type(3) {
+  display: inline-block;
   margin: 0 8px;
 }
 .profile-card .socials a img {
